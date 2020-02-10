@@ -1,0 +1,21 @@
+.container {
+    margin: 30px;
+    
+}
+
+.canvas {
+    border: 3px solid black;
+    margin: 50px;
+    height:600px;
+    width: 600px;
+    background-color: lightskyblue;
+}
+
+.sidePanel {
+    border: 2px solid black;
+    background-color: rgba(57, 46, 121, 0.363);
+    height: 400px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
