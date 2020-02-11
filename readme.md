@@ -63,3 +63,20 @@ It may help to review relative vs absolute positioning, and how top and left can
 You may find this guide helpful for drawing shapes with CSS (For triangle, use Top-Left, Top-Right, Bottom-Left, or Bottom-Right)
 Triangle area: 0.5 * base * height
 Triangle perimeter (right isoceles): 2 * height + (square root of 2) * height
+
+
+
+
+
+
+
+        // super(shapeType, perimeter, width, height, canvas)
+        // this.area = area;
+        // this.div = document.createElement('div');
+        // this.div.className = 'shapes';
+        // this.div.id= counter;
+        // this.shapeType = shapeType;
+        // this.perimeter = perimeter;
+        // this.width = width;
+        // this.height = height;
+        // this.canvas.appendChild(this.div)

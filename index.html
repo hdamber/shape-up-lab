@@ -9,62 +9,60 @@
     <title>Shape Up or Shape Out</title>
 </head>
 <body>
-<div class = "container">
+<div id = "container">
     <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text">Rectangle</span>
         </div>
-        <input type="text" placeholder="Width" aria-label="Width" class="form-control">
-        <input type="text" placeholder="Height" aria-label="Height" class="form-control">
-        <button type="button" class="btn btn-outline-info">Add Rectangle</button>
+        <input type="text" id="recWidth" placeholder="Width" aria-label="Width" class="form-control">
+        <input type="text" id="recHeight" placeholder="Height" aria-label="Height" class="form-control">
+        <button type="button" id="btnRec" class="btn btn-outline-info">Add Rectangle</button>
       </div>
+
+  
 
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text">Square</span>
         </div>
-        <input type="text" placeholder="Side Length" aria-label="Side Length" class="form-control">
-        <button type="button" class="btn btn-outline-info">Add Square</button>
+        <input type="text" placeholder="Side Length" id="sideLength" aria-label="Side Length" class="form-control">
+        <button type="button" id="btnSq" class="btn btn-outline-info">Add Square</button>
       </div>
 
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text">Circle</span>
         </div>
-        <input type="text" placeholder="Radius" aria-label="Radius" class="form-control">
-        <button type="button" class="btn btn-outline-info">Add Circle</button>
+        <input type="text" placeholder="Radius" id="radius" aria-label="Radius" class="form-control">
+        <button type="button" id="btnCir" class="btn btn-outline-info">Add Circle</button>
       </div>
 
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text">Isoceles Right Triangle</span>
         </div>
-        <input type="text" placeholder="Height" aria-label="Height" class="form-control">
-        <button type="button" class="btn btn-outline-info">Add Isoceles</button>
+        <input type="text" placeholder="Height" id="isoHeight" aria-label="Height" class="form-control">
+        <button type="button" id="btnIso" class="btn btn-outline-info">Add Isoceles</button>
       </div>
-       
 </div>
 
 <div class="canvasContainer row">
-    <div class="canvas col">
-        <div class="fixedCanvas"></div>
-    </div>
-    <div class="sidePanel col">
-        <h5>Shape:</h5>
-        <input type="text" value = "px">
-        <h5>Width:</h5>
-        <input type="text" value = "px">
-        <h5>Height:</h5>
-        <input type="text" value = "px">
-        <h5>Radius:</h5>
-        <input type="text" value = "px">
-        <h5>Area:</h5>
-        <input type="text" value = "px">
-        <h5>Perimeter:</h5>
-        <input type="text" value = "px">
-    </div>
+<div id="shapeBoard"></div>
+<div class="sidePanel col">
+  <h5>Shape:</h5>
+  <input type="text" value = "px">
+  <h5>Width:</h5>
+  <input type="text" value = "px">
+  <h5>Height:</h5>
+  <input type="text" value = "px">
+  <h5>Radius:</h5>
+  <input type="text" value = "px">
+  <h5>Area:</h5>
+  <input type="text" value = "px">
+  <h5>Perimeter:</h5>
+  <input type="text" value = "px">
 </div>
-
+</div>
 
     
 
