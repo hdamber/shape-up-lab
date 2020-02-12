@@ -6,8 +6,8 @@ let btnIso = document.getElementById('btnIso');
 // form input
 let recW = document.getElementById('recWidth');
 let recH = document.getElementById('recHeight');
-let sideLength = document.getElementById('sideLength');
-let radius = document.getElementById('radius')
+let squareSide = document.getElementById('sideLength');
+let circleRadius = document.getElementById('radius')
 let isoH = document.getElementById('isoHeight');
 let counter = 0
 let shapeBoard = document.getElementById('shapeBoard')
@@ -46,15 +46,45 @@ class Rectangle extends Shapes {
 }
 
 class Square extends Shapes {
-    constructor(height, width) {
+    constructor(height, width, sideLength) {
         super(height, width, sideLength)
+        this.height = this.squareSide;
+        this.width = this.squareSide;
+        this.sideLength = squareSide.value;
+        this.squareSide = squareSide.value;
+        this.squareDiv = document.createElement('div');
+        this.squareDiv.style.squareSide = `${this.sideLength}px`;
+        this.squareDiv.style.height = `${this.squareSide}px`;
+        this.squareDiv.style.width = `${this.squareSide}px`;
+        this.squareDiv.className = 'square';
+        this.squareY = Math.floor(Math.random() * 600);
+        this.squareX = Math.floor(Math.random() * 600); 
+        this.squareDiv.style.top = `${this.squareX}px`;
+        this.squareDiv.style.left = `${this.squareY}px`;
+        this.squareDiv.style.position = 'absolute';
+        shapeBoard.appendChild(this.squareDiv);
         
     }
 }
 
 class Circle extends Shapes {
-    constructor(radius) {
-        super(radius)
+    constructor(height, width, radius) {
+        super(height, width, radius)
+        this.height = this.circleRadius;
+        this.width = this.circleRadius;
+        this.radius = circleRadius.value;
+        this.circleRadius = circleRadius.value;
+        this.circleDiv = document.createElement('div');
+        this.circleDiv.style.circleRadius = `${this.radius}px`;
+        this.circleDiv.style.width = `${this.circleRadius}px`;
+        this.circleDiv.style.height = `${this.circleRadius}px`;
+        this.circleDiv.className = 'circle';
+        this.circleY = Math.floor(Math.random() * 600);
+        this.circleX = Math.floor(Math.random() * 600);
+        this.circleDiv.style.top = `${this.circleX}px`;
+        this.circleDiv.style.left = `${this.circleY}px`;
+        shapeBoard.appendChild(this.circleDiv);
+    
         
     }
 }
@@ -68,20 +98,20 @@ class Isoceles extends Shapes {
 
 
 
-
+// button event listener on click
 btnRec.addEventListener('click', () => {
     new Rectangle ()
 })
 
 
 btnSq.addEventListener('click', () => {
-    console.log('hi')
+    new Square ()
 })
 
 btnCir.addEventListener('click', () => {
-    console.log('hi')
+    new Circle ()
 })
 
 btnIso.addEventListener('click', () => {
-    console.log('hi')
+    new Isoceles ()
 })

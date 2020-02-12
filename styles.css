@@ -30,25 +30,29 @@
 
 .rectangle {
     border: 2px solid black;
-    background: red;
+    background: darkblue;
     
 }
 
 
-/* #square {
-    background: red;
-  }
+.square {
+    background: purple;
+    border: 2px solid purple;
+}
+
+.circle {
+    position: absolute;
+    background: blueviolet;
+    border: 2px solid blueviolet; 
+    border-radius: 50%;
+}
 
 
-  #cirlce {
-    background: red;
-    border-radius: 50%
-  }
-
-  
-  #isoceles {
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
-  } */
-  
+.isoceles {
+    /* background: plum;
+    border: 2px solid plum; */
+    width: 0;
+    height: 0;
+    border-top: solid plum
+    /* border-right: solid transparent; */
+} 
